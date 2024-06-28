@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
     <title>Login</title>
 </head>
@@ -10,7 +11,7 @@
     <main>
         <section id="login">
             <div id="imagem">
-                "foto"
+                
             </div>
             <div id="formulario">
                 <h1>Login</h1>
@@ -19,10 +20,20 @@
                 </p>
                 <p>
                     <form action="cadastro.php" method="post">
-                        <input type="email" name="mail" id="iMail" placeholder="seu e-mail" required>
-                        <input type="password" name="senha" id="idSenha" placeholder="sua senha" required minlength="8">
+
+                        <div id="divEmail" class="bginput">
+                            <span id="spanEmail" class="material-icons">person</span>
+                            <input type="email" name="mail" id="iMail" class="acesso" placeholder="seu e-mail" required>
+                        </div>
+                       
+                        <div id="divSenha" class="bginput">
+                            <span id="spanSenha" class="material-icons">vpn_key</span>
+                            <input type="password" name="senha" id="idSenha" class="acesso" placeholder="sua senha" required minlength="8">
+                        </div>
+                        
                         <input type="submit" value="Entrar" id="idEntrar">
-                        <span class="esqueci" id="idEsqueci"><a href="#">Esqueci a senha</a></span>
+                        <a href="#" id="idEsqueci" target="">Esqueci a senha<span id="iconMail" class="material-icons">mail</span></a>
+
                     </form>
                 </p>
             </div>
