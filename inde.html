@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Login</title>
+</head>
+<body>
+    <main>
+        <section id="login">
+            <div id="imagem">
+
+            </div>
+            <div id="formulario">
+                <h1>Login</h1>
+                <p>
+                    Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.
+                </p>
+                <p>
+                    <form action="cadastro.php" method="post">
+                        <input type="email" name="mail" id="iMail" placeholder="seu e-mail" required>
+                        <input type="password" name="senha" id="idSenha" placeholder="sua senha" required minlength="8">
+                        <input type="submit" value="Entrar" id="idEntrar">
+                        <span class="esqueci" id="idEsqueci"><a href="#">Esqueci a senha</a></span>
+                    </form>
+                </p>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>
