@@ -10,35 +10,40 @@
 <body>
     <main>
         <section id="login">
+
             <div id="imagem">
-                
+                <!-- contem iamgem na css -->
             </div>
+
+
             <div id="formulario">
-                <h1>Login</h1>
-                <p>
-                    Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.
-                </p>
-                <p>
-                    <form action="cadastro.php" method="post">
 
-                        <div id="divEmail" class="bginput">
-                            <span id="spanEmail" class="material-icons">person</span>
-                            <input type="email" name="mail" id="iMail" class="acesso" placeholder="seu e-mail" required>
-                        </div>
-                       
-                        <div id="divSenha" class="bginput">
-                            <span id="spanSenha" class="material-icons">vpn_key</span>
-                            <input type="password" name="senha" id="idSenha" class="acesso" placeholder="sua senha" required minlength="8">
-                        </div>
-                        
-                        <input type="submit" value="Entrar" id="idEntrar">
-                        <a href="#" id="idEsqueci" target="">Esqueci a senha<span id="iconMail" class="material-icons">mail</span></a>
+                <h1>Login</h1> 
 
-                    </form>
-                </p>
+                <h5>Seja bem-vindo(a) novamente.</h5>
+                <p>Faça login para acessar sua conta e administrar seus orçamentos e ordens de serviços.</p>
+                
+                <form action="login.php" method="post">
+
+                                <div class="bgInputaAzul">
+                                    <span class="material-icons">person</span>
+                                    <input class="campo" type="email" name="usuario" id="idUsuario" placeholder="mail@mail.com" required>
+                                </div>
+
+                                <div class="bgInputaAzul">
+                                    <span class="material-icons">vpn_key</span>
+                                    <input class="campo" type="password" name="senha" id="idSenha" minlength="8" placeholder="senha">
+                                </div>
+
+                                <input type="submit" value="Entrar" id="entrar">
+
+                                <div class="bgInputaBco">
+                                    <a href="#" id="esqueci">Esqueci a senha<span class="material-icons" id="matMail">mail</span></a>
+                                </div>   
+                </form>
+
             </div>
         </section>
     </main>
-    
-</body>
+    </body>
 </html>
