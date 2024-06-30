@@ -124,7 +124,7 @@ a#esqueci {
     width: 100%;
     height: 100%;
     text-decoration: none;
-    color: #DCA11D;
+    color: white;
 }
 
 a#esqueci:hover {
@@ -132,23 +132,22 @@ a#esqueci:hover {
 }
 
 .bgInputaBco {
-    background-color: white;
+    background-color: #5E89C2;
     font-size: 0.9em;
     text-align: center;
-    width: 248px;
-    height: 26px;
+    width: 250px;
+    height: 28px;
     margin: auto;
     position: relative;
     padding-top: 8px;
     margin-top: 1px;
     margin-bottom: 2px;
-    border: 2px solid #DCA11D;
     border-radius: 7px;
 }
 
 #matMail {
     position: relative;
     top: -0.5px;
-    color: #DCA11D;
+    color: white;
     font-size: 0.7em;
 }
