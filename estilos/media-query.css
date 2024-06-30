@@ -12,65 +12,262 @@ _______________________________ */
 
 @media screen and (min-width: 768px) and (max-width: 992px) { /* tablet */
 
-    *{
-        margin: 0px;
-        padding: 0px;
-    }
-
     html, body {
         background-image: linear-gradient(to bottom, #002654, #5E89C2);
-        width: 100vw;
-        height: 100vh;
     }
 
     section {
+        background-color: white;
+        border-radius: 15px;
         position: absolute;
         left: 50%;
         top: 50%;
+        padding-right: 5px;
         transform: translate(-50%, -50%);
-        background-color: white;
-        border-radius: 20px;
-        width: 80vw ;
+        width: 80vw;
         height: 280px;
-        box-shadow: 1px 5px 5px #0c0c0ca2;
+        box-shadow: 1px 1px 5px #0c0c0ca2;
     }
 
     div#imagem {
-        position: absolute;
         width: 30%;
-        height: 100%;
-        background: url('../imagens/mecanico2.jpg') no-repeat left center / cover;
-        border-radius: 20px 0 0 20px;
+        height: 280px;
+        position: absolute;
+        float: left;
+        background: url('../imagens/mecanico2.jpg') no-repeat left / cover;
+        border-radius: 15px 0px 0px 15px;
     }
 
     div#formulario {
-        position: absolute;
-        left: 30%;
-        width: 70%;
-    }
-
-    h1 {
-        text-align: center;
-        margin-bottom: 5px;
-    }
-    
-    h5 {
-        text-align: center;
-    }
-
-    p {
+        width: 68%;
+        height: 280px;
         position: relative;
-        text-align: left;
+        left: 30%;
+        padding: 5px;
+    }
+
+    #formulario > h1 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    #formulario  > h4 {
+        text-align: center;
+    }
+
+    #formulario > p {
+        font-size: 0.9em;
+        text-align: justify;
+        padding-left: 15px;
+        padding-right: 15px;
         margin-bottom: 5px;
+    }
+
+    div.bgInputaAzul {
+        background-color: #002654;
+        width: 100%;
+        height: 36px;
+        margin: auto;
+        margin-bottom: 5px;
+        border-radius: 8px;
+    }
+
+    .material-icons {
+        color: white;
+        float: left;
+        margin-top: 7px;
+        margin-left: 8px;
+    }
+
+    input.campo {
+        background-color: #5E89C2;
+        color: white;
+        font-size: 0.8em;
+        width: 90%;
+        height: 32px;
+        float: right;
+        margin: auto;
+        margin-top: 2px;
+        margin-right: 2px;
+        padding-left: 7px;
+        border: none;
+        border-radius: 7px;
+    }
+
+    .campo::placeholder {
+        font-size: 0.9em;
+        color: white;
+        padding-left: 5px;
+    }
+
+    input#entrar {
+        background-color: #DCA11D;
+        color: white;
+        font-weight: bold;
+        width: 100%;
+        height: 36px;
+        margin: auto;
+        margin-bottom: 5px;
+        border: none;
+        border-radius: 8px;
+    }
+
+    input#entrar:hover {
+        background-color: white;
+        color: #DCA11D;
+        border: 2px solid #DCA11D;
+        transition: 0.3s;
+    }
+
+    a#esqueci {
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: white;
+    }
+
+    a#esqueci:hover {
+        font-weight: bolder;
+    }
+
+    .bgInputaBco {
+        background-color: #5E89C2;
+        font-size: 0.9em;
+        text-align: center;
+        width: 100%;
+        height: 28px;
+        padding-top: 10px;
+        border-radius: 7px;
     }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) { /* desktop */
 
     html, body {
-        background-color: white ;
-        width: 100vw;
-        height: 100vh;
+        background-image: linear-gradient(to bottom, #002654, #5E89C2);
     }
 
+    section {
+        background-color: white;
+        border-radius: 15px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        padding-right: 5px;
+        transform: translate(-50%, -50%);
+        width: 80vw;
+        height: 280px;
+        box-shadow: 1px 1px 5px #0c0c0ca2;
+    }
+
+    div#imagem {
+        width: 30%;
+        height: 280px;
+        position: absolute;
+        float: left;
+        background: url('../imagens/mecanico2.jpg') no-repeat left / cover;
+        border-radius: 15px 0px 0px 15px;
+    }
+
+    div#formulario {
+        width: 68%;
+        height: 280px;
+        position: relative;
+        left: 30%;
+        padding: 5px;
+    }
+
+    #formulario > h1 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    #formulario  > h4 {
+        text-align: center;
+    }
+
+    #formulario > p {
+        font-size: 0.9em;
+        text-align: justify;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 5px;
+    }
+
+    div.bgInputaAzul {
+        background-color: #002654;
+        width: 100%;
+        height: 36px;
+        margin: auto;
+        margin-bottom: 5px;
+        border-radius: 8px;
+    }
+
+    .material-icons {
+        color: white;
+        float: left;
+        margin-top: 7px;
+        margin-left: 8px;
+    }
+
+    input.campo {
+        background-color: #5E89C2;
+        color: white;
+        font-size: 0.8em;
+        width: 90%;
+        height: 32px;
+        float: right;
+        margin: auto;
+        margin-top: 2px;
+        margin-right: 2px;
+        padding-left: 7px;
+        border: none;
+        border-radius: 7px;
+    }
+
+    .campo::placeholder {
+        font-size: 0.9em;
+        color: white;
+        padding-left: 5px;
+    }
+
+    input#entrar {
+        background-color: #DCA11D;
+        color: white;
+        font-weight: bold;
+        width: 100%;
+        height: 36px;
+        margin: auto;
+        margin-bottom: 5px;
+        border: none;
+        border-radius: 8px;
+    }
+
+    input#entrar:hover {
+        background-color: white;
+        color: #DCA11D;
+        border: 2px solid #DCA11D;
+        transition: 0.3s;
+    }
+
+    a#esqueci {
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: white;
+    }
+
+    a#esqueci:hover {
+        font-weight: bolder;
+    }
+
+    .bgInputaBco {
+        background-color: #5E89C2;
+        font-size: 0.9em;
+        text-align: center;
+        width: 100%;
+        height: 28px;
+        padding-top: 10px;
+        border-radius: 7px;
+    }
 }
