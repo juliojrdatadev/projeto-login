@@ -10,398 +10,87 @@ Desktops = de 992px até 1200px
 Telas Grandes = acima de 1200px
 _______________________________ */
 
-@media screen and (min-width: 768px) and (max-width: 992px) { /* tablet */
-
-    html, body {
-        background-image: linear-gradient(to bottom, #002654, #5E89C2);
-    }
+@media screen and (min-width: 768px) and (max-width: 992px) 
+{ /* tablet */
 
     section {
         background-color: white;
-        border-radius: 15px;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        padding-right: 5px;
-        transform: translate(-50%, -50%);
         width: 80vw;
         height: 280px;
-        box-shadow: 1px 1px 5px #0c0c0ca2;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        border-radius: 15px;
+        overflow: hidden;
     }
 
     div#imagem {
-        width: 30%;
-        height: 280px;
-        position: absolute;
-        float: left;
-        background: url('../imagens/mecanico2.jpg') no-repeat left / cover;
-        border-radius: 15px 0px 0px 15px;
-    }
-
-    div#formulario {
-        width: 68%;
-        height: 280px;
-        position: relative;
-        left: 30%;
-        padding: 5px;
-    }
-
-    #formulario > h1 {
-        text-align: center;
-        margin-bottom: 10px;
-    }
-
-    #formulario  > h4 {
-        text-align: center;
-    }
-
-    #formulario > p {
-        font-size: 0.9em;
-        text-align: justify;
-        padding-left: 15px;
-        padding-right: 15px;
-        margin-bottom: 5px;
-    }
-
-    div.bgInputaAzul {
-        background-color: #002654;
-        width: 100%;
-        height: 36px;
-        margin: auto;
-        margin-bottom: 5px;
-        border-radius: 8px;
-    }
-
-    .material-icons {
-        color: white;
-        float: left;
-        margin-top: 7px;
-        margin-left: 8px;
-    }
-
-    input.campo {
-        background-color: #5E89C2;
-        color: white;
-        font-size: 0.8em;
-        width: 90%;
-        height: 32px;
-        float: right;
-        margin: auto;
-        margin-top: 1.5px;
-        margin-right: 2px;
-        padding-left: 7px;
-        border: none;
-        border-radius: 7px;
-    }
-
-    .campo::placeholder {
-        font-size: 0.9em;
-        color: white;
-        padding-left: 5px;
-    }
-
-    input#entrar {
-        background-color: #DCA11D;
-        color: white;
-        font-weight: bold;
-        width: 100%;
-        height: 36px;
-        margin: auto;
-        margin-bottom: 5px;
-        border: none;
-        border-radius: 8px;
-    }
-
-    input#entrar:hover {
-        background-color: white;
-        color: #DCA11D;
-        border: 2px solid #DCA11D;
-        transition: 0.3s;
-    }
-
-    a#esqueci {
-        width: 100%;
-        height: 100%;
-        text-decoration: none;
-        color: white;
-    }
-
-    a#esqueci:hover {
-        font-weight: bolder;
-    }
-
-    .bgInputaBco {
-        background-color: #5E89C2;
-        font-size: 0.9em;
-        text-align: center;
-        width: 100%;
-        height: 28px;
-        padding-top: 10px;
-        border-radius: 7px;
-    }
-}
-
-@media screen and (min-width: 992px) and (max-width: 1200px) { /* desktop */
-
-    html, body {
-        background-image: linear-gradient(to bottom, #002654, #5E89C2);
-    }
-
-    section {
-        background-color: white;
-        border-radius: 15px;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        padding-right: 5px;
-        transform: translate(-50%, -50%);
-        width: 80vw;
-        height: 280px;
-        box-shadow: 1px 1px 5px #0c0c0ca2;
-    }
-
-    div#imagem {
+        background: #5E89C2 url('../imagens/mecanico2.jpg') no-repeat left / cover;
         width: 40%;
-        height: 280px;
-        position: absolute;
-        float: right;
-        left: 60%;
-        background: url('../imagens/mecanico-orcamento2.jpg') no-repeat right / cover;
-        border-radius: 0 15px 15px 0;
-    }
-
-    div#formulario {
-        width: 58%;
-        height: 280px;
-        position: relative;
-        left: 0;
-        padding: 5px;
-    }
-
-    #formulario > h1 {
-        text-align: center;
-        margin-bottom: 10px;
-    }
-
-    #formulario  > h4 {
-        text-align: center;
-    }
-
-    #formulario > p {
-        font-size: 0.9em;
-        text-align: justify;
-        padding-left: 15px;
-        padding-right: 15px;
-        margin-bottom: 5px;
-    }
-
-    div.bgInputaAzul {
-        background-color: #002654;
-        width: 100%;
-        height: 36px;
-        margin: auto;
-        margin-bottom: 5px;
-        border-radius: 8px;
-    }
-
-    .material-icons {
-        color: white;
-        float: left;
-        margin-top: 7px;
-        margin-left: 8px;
-    }
-
-    input.campo {
-        background-color: #5E89C2;
-        color: white;
-        font-size: 0.8em;
-        width: 90%;
-        height: 32px;
-        float: right;
-        margin: auto;
-        margin-top: 2px;
-        margin-right: 3px;
-        padding-left: 7px;
-        border: none;
-        border-radius: 7px;
-    }
-
-    .campo::placeholder {
-        font-size: 0.9em;
-        color: white;
-        padding-left: 5px;
-    }
-
-    input#entrar {
-        background-color: #DCA11D;
-        color: white;
-        font-weight: bold;
-        width: 100%;
-        height: 36px;
-        margin: auto;
-        margin-bottom: 5px;
-        border: none;
-        border-radius: 8px;
-    }
-
-    input#entrar:hover {
-        background-color: white;
-        color: #DCA11D;
-        border: 2px solid #DCA11D;
-        transition: 0.3s;
-    }
-
-    a#esqueci {
-        width: 100%;
         height: 100%;
-        text-decoration: none;
-        color: white;
     }
 
-    a#esqueci:hover {
-        font-weight: bolder;
+    div#login > h1 {
+        padding-top: 0px;
+        margin-top: -3px;
     }
 
-    .bgInputaBco {
-        background-color: #5E89C2;
-        font-size: 0.9em;
-        text-align: center;
-        width: 100%;
-        height: 28px;
-        padding-top: 10px;
-        border-radius: 7px;
-    }
 }
+    
 
-@media screen and (min-width: 1200px) 
-{ /* telas grandes */
-
-    html, body {
-        background-image: linear-gradient(to bottom, #002654, #5E89C2);
-    }
+@media screen and (min-width: 992px) and (max-width: 1200px)
+{ /* desktop */
 
     section {
         background-color: white;
+        width: 80vw;
+        height: 280px;
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        justify-content: flex-start;
+        align-items: center;
         border-radius: 15px;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        padding-right: 5px;
-        transform: translate(-50%, -50%);
+        overflow: hidden;
+    }
+    
+    div#imagem {
+        background: #5E89C2 url('../imagens/mecanico-orcamento2.jpg') no-repeat right / cover;
+        width: 50%;
+        height: 100%;
+    }
+
+    div#login > h1 {
+        padding-top: 0px;
+        margin-top: -3px;
+    }
+
+}
+
+@media screen and (min-width: 1200px)
+{ /* desktop */
+
+    section {
+        background-color: white;
         width: 960px;
         height: 280px;
-        box-shadow: 1px 1px 5px #0c0c0ca2;
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        border-radius: 15px;
+        overflow: hidden;
     }
-
+    
     div#imagem {
+        background: #5E89C2 url('../imagens/mecanico-orcamento2.jpg') no-repeat right / cover;
         width: 50%;
-        height: 280px;
-        position: absolute;
-        float: right;
-        left: 50%;
-        background: url('../imagens/mecanico-orcamento2.jpg') no-repeat right / cover;
-        border-radius: 0 15px 15px 0;
-    }
-
-    div#formulario {
-        width: 48%;
-        height: 280px;
-        position: relative;
-        left: 0;
-        padding: 5px;
-    }
-
-    #formulario > h1 {
-        text-align: center;
-        margin-bottom: 10px;
-    }
-
-    #formulario  > h4 {
-        text-align: center;
-    }
-
-    #formulario > p {
-        font-size: 0.9em;
-        text-align: justify;
-        padding-left: 15px;
-        padding-right: 15px;
-        margin-bottom: 5px;
-    }
-
-    div.bgInputaAzul {
-        background-color: #002654;
-        width: 100%;
-        height: 36px;
-        margin: auto;
-        margin-bottom: 5px;
-        border-radius: 8px;
-    }
-
-    .material-icons {
-        color: white;
-        float: left;
-        margin-top: 7px;
-        margin-left: 8px;
-    }
-
-    input.campo {
-        background-color: #5E89C2;
-        color: white;
-        font-size: 0.8em;
-        width: 90%;
-        height: 32px;
-        float: right;
-        margin: auto;
-        margin-top: 2px;
-        margin-right: 2px;
-        padding-left: 7px;
-        border: none;
-        border-radius: 7px;
-    }
-
-    .campo::placeholder {
-        font-size: 0.9em;
-        color: white;
-        padding-left: 5px;
-    }
-
-    input#entrar {
-        background-color: #DCA11D;
-        color: white;
-        font-weight: bold;
-        width: 100%;
-        height: 36px;
-        margin: auto;
-        margin-bottom: 5px;
-        border: none;
-        border-radius: 8px;
-    }
-
-    input#entrar:hover {
-        background-color: white;
-        color: #DCA11D;
-        border: 2px solid #DCA11D;
-        transition: 0.3s;
-    }
-
-    a#esqueci {
-        width: 100%;
         height: 100%;
-        text-decoration: none;
-        color: white;
     }
 
-    a#esqueci:hover {
-        font-weight: bolder;
+    div#login > h1 {
+        padding-top: 0px;
+        margin-top: -3px;
     }
 
-    .bgInputaBco {
-        background-color: #5E89C2;
-        font-size: 0.9em;
-        text-align: center;
-        width: 100%;
-        height: 28px;
-        padding-top: 10px;
-        border-radius: 7px;
-    }
 }
